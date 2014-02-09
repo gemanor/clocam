@@ -4,7 +4,6 @@ var router = express();
 var server = http.createServer(router);
 var path = require('path');
 var fs = require('fs');
-var ffmpeg = require('fluent-ffmpeg');
 var rt = require("thumb-express");
 
 router.use(rt.init(path.join(__dirname)));
